@@ -26,6 +26,7 @@ const workerConfig = {
       target: 'https://zen-vip.zeabur.app',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'WEB ZEN VIP STATUS',
+      statusPageLink: 'https://example.com',
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000
@@ -39,6 +40,7 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'zen.zeabur.app',
       tooltip: 'WEB ZEN STATUS',
+      statusPageLink: 'https://example.com',
       timeout: 5000
     },
   ],
