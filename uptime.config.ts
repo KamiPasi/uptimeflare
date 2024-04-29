@@ -17,33 +17,18 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'WEB-ZEBVIP',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'WEB-ZEBVIP',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://zen-vip.zeabur.app',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      tooltip: 'WEB ZEN VIP STATUS',
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
-      // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'success',
-      // [OPTIONAL] if specified, the check will run in your specified region,
-      // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://xxx.example.com',
     },
     // Example TCP Monitor
     {
@@ -53,8 +38,7 @@ const workerConfig = {
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 'zen.zeabur.app',
-      tooltip: 'WEB ZEN STA',
-      statusPageLink: 'https://zen.zeabur.app',
+      tooltip: 'WEB ZEN STATUS',
       timeout: 5000,
     },
   ],
