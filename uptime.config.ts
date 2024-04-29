@@ -28,7 +28,7 @@ const workerConfig = {
       tooltip: 'WEB ZEN VIP STATUS',
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+      timeout: 10000
     },
     // Example TCP Monitor
     {
@@ -39,7 +39,7 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'zen.zeabur.app',
       tooltip: 'WEB ZEN STATUS',
-      timeout: 5000,
+      timeout: 5000
     },
   ],
   callbacks: {
