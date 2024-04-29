@@ -17,9 +17,9 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'WEB-ZEBVIP',
+      id: 'WEB-ZENVIP',
       // `name` is used at status page and callback message
-      name: 'WEB-ZEBVIP',
+      name: 'WEB-ZENVIP',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -31,17 +31,54 @@ const workerConfig = {
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000
     },
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'WEB-ZENVIPS',
+      // `name` is used at status page and callback message
+      name: 'WEB-ZENVIPS',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://zen-vips.zeabur.app',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'WEB ZEN VIP STATUS',
+      statusPageLink: 'https://example.com',
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000
+    },
     // Example TCP Monitor
     {
-      id: 'zen',
-      name: 'ZEN TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 'zen.zeabur.app',
-      tooltip: 'WEB ZEN STATUS',
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'WEB-ZEN',
+      // `name` is used at status page and callback message
+      name: 'WEB-ZEN',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://zen.zeabur.app',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'WEB ZEN VIP STATUS',
       statusPageLink: 'https://example.com',
-      timeout: 5000
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000
+    },
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'WEB-ZENS',
+      // `name` is used at status page and callback message
+      name: 'WEB-ZENS',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://zen-s.zeabur.app',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'WEB ZEN VIP STATUS',
+      statusPageLink: 'https://example.com',
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000
     },
   ],
   callbacks: {
